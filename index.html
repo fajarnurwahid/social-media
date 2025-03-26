@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="tailwindcss-colors.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Social Media</title>
+    </head>
+    <body>
+        <!-- start: Sidebar -->
+        <div class="sidebar">
+            <a href="#" class="sidebar-logo">
+                <img src="https://placehold.co/100x32" alt="Logo image" class="sidebar-logo-image" />
+            </a>
+            <form class="sidebar-form">
+                <input type="text" class="form-control" placeholder="Search..." />
+            </form>
+            <div class="sidebar-menu-wrapper">
+                <div class="sidebar-menu-box">
+                    <a href="#" class="sidebar-menu-item active">
+                        <span class="sidebar-menu-item-icon">
+                            <span class="sidebar-menu-item-icon-default"><i class="ri-home-4-line"></i></span>
+                            <span class="sidebar-menu-item-icon-active"><i class="ri-home-4-fill"></i></span>
+                        </span>
+                        <span class="sidebar-menu-item-text">For You</span>
+                    </a>
+                    <a href="#" class="sidebar-menu-item">
+                        <span class="sidebar-menu-item-icon">
+                            <span class="sidebar-menu-item-icon-default"><i class="ri-compass-line"></i></span>
+                            <span class="sidebar-menu-item-icon-active"><i class="ri-compass-fill"></i></span>
+                        </span>
+                        <span class="sidebar-menu-item-text">Explore</span>
+                    </a>
+                </div>
+                <div class="sidebar-menu-box">
+                    <p class="sidebar-menu-item-title">Account</p>
+                    <a href="#" class="sidebar-menu-item highlight">
+                        <span class="sidebar-menu-item-icon"><i class="ri-add-circle-fill"></i></span>
+                        <span class="sidebar-menu-item-text">Upload</span>
+                    </a>
+                    <a href="#" class="sidebar-menu-item">
+                        <span class="sidebar-menu-item-icon"><i class="ri-list-indefinite"></i></span>
+                        <span class="sidebar-menu-item-text">Posts</span>
+                    </a>
+                    <a href="#" class="sidebar-menu-item">
+                        <span class="sidebar-menu-item-icon">
+                            <img src="https://placehold.co/24x24" alt="Profile image" class="sidebar-menu-item-icon-image" />
+                        </span>
+                        <span class="sidebar-menu-item-text">Profile</span>
+                    </a>
+                </div>
+                <div class="sidebar-menu-box">
+                    <p class="sidebar-menu-item-title">More</p>
+                    <a href="#" class="sidebar-menu-item">
+                        <span class="sidebar-menu-item-icon">
+                            <span class="sidebar-menu-item-icon-default"><i class="ri-settings-line"></i></span>
+                            <span class="sidebar-menu-item-icon-active"><i class="ri-settings-fill"></i></span>
+                        </span>
+                        <span class="sidebar-menu-item-text">Settings</span>
+                    </a>
+                    <a href="#" class="sidebar-menu-item">
+                        <span class="sidebar-menu-item-icon">
+                            <span class="sidebar-menu-item-icon-default"><i class="ri-notification-3-line"></i></span>
+                            <span class="sidebar-menu-item-icon-active"><i class="ri-notification-3-fill"></i></span>
+                        </span>
+                        <span class="sidebar-menu-item-text">Notifications</span>
+                    </a>
+                    <a href="#" class="sidebar-menu-item">
+                        <span class="sidebar-menu-item-icon">
+                            <span class="sidebar-menu-item-icon-default"><i class="ri-group-2-line"></i></span>
+                            <span class="sidebar-menu-item-icon-active"><i class="ri-group-2-fill"></i></span>
+                        </span>
+                        <span class="sidebar-menu-item-text">Friends</span>
+                    </a>
+                </div>
+                <div class="sidebar-menu-box">
+                    <p class="sidebar-menu-item-title">Interests</p>
+                    <a href="#" class="sidebar-menu-item">
+                        <span class="sidebar-menu-item-icon">
+                            <img src="https://placehold.co/24x24" alt="Profile image" class="sidebar-menu-item-icon-image" />
+                        </span>
+                        <span class="sidebar-menu-item-text">Tech</span>
+                    </a>
+                    <a href="#" class="sidebar-menu-item">
+                        <span class="sidebar-menu-item-icon">
+                            <img src="https://placehold.co/24x24" alt="Profile image" class="sidebar-menu-item-icon-image" />
+                        </span>
+                        <span class="sidebar-menu-item-text">Music</span>
+                    </a>
+                    <a href="#" class="sidebar-menu-item">
+                        <span class="sidebar-menu-item-icon">
+                            <img src="https://placehold.co/24x24" alt="Profile image" class="sidebar-menu-item-icon-image" />
+                        </span>
+                        <span class="sidebar-menu-item-text">Entertainment</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- end: Sidebar -->
+        <!-- start: Main -->
+        <main class="main">
+            <div class="social-wrapper">
+                <div class="social-content">
+                    <div class="social-content-wrapper">
+                        <div class="swiper social-swiper" id="social-swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide social-item">
+                                    <div class="social-item-profile">
+                                        <img src="https://placehold.co/32x32" alt="Profile image" class="social-item-profile-image" />
+                                        <div class="social-item-profile-body">
+                                            <a href="#" class="social-item-profile-name">John Doe</a>
+                                            <p class="social-item-profile-date">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <p class="social-item-caption">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="social-item-image-wrapper">
+                                        <img src="https://placehold.co/200x300" alt="Social image" class="social-item-image-item" />
+                                    </div>
+                                    <div class="social-item-tag-wrapper">
+                                        <a href="#" class="social-item-tag-item">#test</a>
+                                        <a href="#" class="social-item-tag-item">#test</a>
+                                        <a href="#" class="social-item-tag-item">#test</a>
+                                    </div>
+                                    <div class="social-item-action-wrapper">
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-heart-3-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-chat-3-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-bookmark-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-share-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide social-item">
+                                    <div class="social-item-profile">
+                                        <img src="https://placehold.co/32x32" alt="Profile image" class="social-item-profile-image" />
+                                        <div class="social-item-profile-body">
+                                            <a href="#" class="social-item-profile-name">John Doe</a>
+                                            <p class="social-item-profile-date">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <p class="social-item-caption">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="social-item-image-wrapper">
+                                        <img src="https://placehold.co/200x300" alt="Social image" class="social-item-image-item" />
+                                    </div>
+                                    <div class="social-item-tag-wrapper">
+                                        <a href="#" class="social-item-tag-item">#test</a>
+                                        <a href="#" class="social-item-tag-item">#test</a>
+                                        <a href="#" class="social-item-tag-item">#test</a>
+                                    </div>
+                                    <div class="social-item-action-wrapper">
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-heart-3-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-chat-3-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-bookmark-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-share-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide social-item">
+                                    <div class="social-item-profile">
+                                        <img src="https://placehold.co/32x32" alt="Profile image" class="social-item-profile-image" />
+                                        <div class="social-item-profile-body">
+                                            <a href="#" class="social-item-profile-name">John Doe</a>
+                                            <p class="social-item-profile-date">2 days ago</p>
+                                        </div>
+                                    </div>
+                                    <p class="social-item-caption">Lorem ipsum dolor sit amet consectetur.</p>
+                                    <div class="social-item-image-wrapper">
+                                        <img src="https://placehold.co/200x300" alt="Social image" class="social-item-image-item" />
+                                    </div>
+                                    <div class="social-item-tag-wrapper">
+                                        <a href="#" class="social-item-tag-item">#test</a>
+                                        <a href="#" class="social-item-tag-item">#test</a>
+                                        <a href="#" class="social-item-tag-item">#test</a>
+                                    </div>
+                                    <div class="social-item-action-wrapper">
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-heart-3-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-chat-3-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-bookmark-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                        <button type="button" class="social-item-action-item">
+                                            <span class="social-item-action-item-icon"><i class="ri-share-line"></i></span>
+                                            <span class="social-item-action-item-text">1K</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-navigation">
+                    <button type="button" class="social-navigation-item" data-social-navigation="prev">
+                        <i class="ri-arrow-up-line"></i>
+                    </button>
+                    <button type="button" class="social-navigation-item" data-social-navigation="next">
+                        <i class="ri-arrow-down-line"></i>
+                    </button>
+                </div>
+            </div>
+        </main>
+        <!-- end: Main -->
+        <!-- start: Navigation -->
+        <div class="navigation">
+            <div class="navigation-wrapper">
+                <a href="#" class="navigation-item active">
+                    <span class="navigation-item-icon">
+                        <span class="navigation-item-icon-default"><i class="ri-home-4-line"></i></span>
+                        <span class="navigation-item-icon-active"><i class="ri-home-4-fill"></i></span>
+                    </span>
+                    <span class="navigation-item-text">For You</span>
+                </a>
+                <a href="#" class="navigation-item">
+                    <span class="navigation-item-icon">
+                        <span class="navigation-item-icon-default"><i class="ri-compass-line"></i></span>
+                        <span class="navigation-item-icon-active"><i class="ri-compass-fill"></i></span>
+                    </span>
+                    <span class="navigation-item-text">Explore</span>
+                </a>
+                <a href="#" class="navigation-item navigation-item-cta">
+                    <span class="navigation-item-icon"><i class="ri-add-line"></i></span>
+                </a>
+                <a href="#" class="navigation-item">
+                    <span class="navigation-item-icon">
+                        <span class="navigation-item-icon-default"><i class="ri-notification-3-line"></i></span>
+                        <span class="navigation-item-icon-active"><i class="ri-notification-3-fill"></i></span>
+                    </span>
+                    <span class="navigation-item-text">Notifications</span>
+                </a>
+                <a href="#" class="navigation-item">
+                    <span class="navigation-item-icon">
+                        <span class="navigation-item-icon-default"><i class="ri-user-line"></i></span>
+                        <span class="navigation-item-icon-active"><i class="ri-user-fill"></i></span>
+                    </span>
+                    <span class="navigation-item-text">Profile</span>
+                </a>
+            </div>
+        </div>
+        <!-- end: Navigation -->
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
