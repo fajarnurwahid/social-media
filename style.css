@@ -133,6 +133,7 @@ button {
     position: fixed;
     bottom: 0;
     left: 0;
+    z-index: 10;
     width: 100%;
     background-color: var(--white);
     border-top: 1px solid var(--neutral-200);
@@ -211,7 +212,7 @@ button {
 /* start: Social Media */
 .social-wrapper {
     display: flex;
-    height: 100vh;
+    height: 100dvh;
 }
 .social-content {
     height: 100%;
