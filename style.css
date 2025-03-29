@@ -377,7 +377,7 @@ button {
         padding-bottom: 64px;
     }
     .social-wrapper {
-        height: calc(100vh - 64px);
+        height: calc(100dvh - 64px);
     }
     .navigation {
         display: block;
